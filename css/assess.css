@@ -1,0 +1,28 @@
+
+body {
+    color: #006400;
+    
+}
+    
+form{
+      color: #006400;
+}
+button {
+      padding: 15px;
+      border-radius: 70px;
+      width: 300px;   
+}
+    
+.jumbotron {
+    background-color: transparent;
+}
+
+textarea {
+    width: 50%;
+    height: 10rem;
+    border: 2px solid #006400;
+    border-radius: 20px;
+    padding: 1rem;
+    color: #006400;
+    outline: none;
+}

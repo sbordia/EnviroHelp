@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>EnviroHelp</title>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg" id="navbar-main">
+    <div class="container-fluid">
+       <img src="./img/logo.png" width="90" height="90" class="d-inline-block align-middle bounce-logo" alt="">
+       <a class="navbar-brand" href="index.html">
+          <p class="d-inline align-middle logo-text effect-underline">EnviroHelp</p>
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active"  href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" href="https://enviroblog.blockz.repl.co/" target="_blank">Blog</a>
+         </li>
+           <li class="nav-item">
+            <a class="nav-link" href="assess.html">Diagnosis</a>
+         </li>
+           <li class="nav-item">
+              <a class="nav-link" href="https://search.earth911.com/" target="_blank">Recycling Centers</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="mailto:ganningxu@gmail.com">Contact</a>
+           </li>
+
+          </ul>
+       </div>
+    </div>
+ </nav>
+
+  <section id="cover">
+    <div class="content-container d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 d-flex align-items-center">
+            <div class="content">
+              <h1 class="display-2 dk-gr">EnviroHelp</h1>
+              <p class="lead dk-gr">Submit an image of "trash", wait 5 seconds, and get how to sort it!</p>
+
+              <form action = "http://localhost:5000/determine" method = "POST" 
+              enctype = "multipart/form-data">
+
+              <div class="custom-file mb-3">
+
+                
+                <input type="file" class="custom-file-input" id="file-upload" name="attachment" required>
+
+                <label class="custom-file-label" for="file-upload" id="fileName">Upload an image</label>
+
+                <input type = "submit" id="submit-button" class="btn btn-outline-success form-button hover-effect">
+
+                <input type="button" id="result" class="btn btn-outline-success form-button hover-effect" value="Get Result">
+                </div>
+
+
+              </div>
+          </form>
+          
+          </div>
+          <div class="col-sm-5 offset-sm-2 d-flex justify-content-center">
+            <img src="./img/plant.png" alt="" class="file-upload">
+          </div>
+          
+      </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <section id="results-section" class="hidden">
+    <div class="container text-center">
+      <h1 class="dk-gr">Results</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="lead dk-gr" id="result-type">Please do this</p>
+          <p id="result-description" class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, quasi?</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="./img/logo.png" alt="" class="img-fluid" id="result-img">
+        </div>
+      </div>
+      <button class="mt-5 btn btn-outline-success form-button hover-effect" id="again">Search again</button>
+    </div>
+    
+  </section>
+
+  <div class="separator"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

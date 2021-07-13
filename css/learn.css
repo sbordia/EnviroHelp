@@ -1,0 +1,43 @@
+
+.jumbotron {
+    background-color: transparent;
+}
+#tree-img {
+    max-height: 200px;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+.f {
+    border: 2px solid red;
+}
+
+.row {
+    margin-bottom: 6rem;
+}
+
+.separator {
+    height: 10rem;
+}
+
+.card {
+    border: none;
+    border: 20px;
+    margin: 20px;
+    background-color: #d2ffd2;
+}
+
+.btn {
+    color: #006400 !important;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
