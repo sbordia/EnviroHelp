@@ -1,5 +1,5 @@
 # EnviroHelp 🌳
-EnviroHelp is a web app which educates people about recycling and how everyone can do their share to keep the planet clean. By using a trained and tested achine learning model, users are able to input a picture of the item they want to dispose of, and upload them to our site. EnviroHelp returns whether the image is glass, plastic, trash, metal, or paper, and the proper steps to get rid of that item, without harming the enviroment.
+EnviroHelp is a web app which educates people about recycling and how everyone can do their share to keep the planet clean. By using a trained and tested machine learning model, users are able to input a picture of the item they want to dispose of, and upload them to our site. EnviroHelp returns whether the image is glass, plastic, trash, metal, or paper, and the proper steps to get rid of that item, without harming the enviroment.
 
 ## User Flow 👤
 1. User uploads an image of any item, for example, a water bottle
